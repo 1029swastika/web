@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        .bx {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            animation: ani 3s linear 2ms infinite reverse;
+            /* animation:ani 3s ease-in 2ms alternate forwards; */
+        }
+        .bx:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes ani {
+            0% {
+                background-color: yellow;
+                
+            }
+
+            20% {
+               margin-top:50%;
+                background-color: red;
+            }
+
+            40% {
+                margin-left: 50%;
+                background-color: green;
+            }
+
+            100% {
+                margin-bottom:50%;
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bx">
+
+    </div>
+</body>
+
+</html>

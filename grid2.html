@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      .bx {
+        max-width: 400px;
+        border: 1px solid black;
+        display: grid;
+        height: 200px;
+        grid-template-columns: 100px 100px 50px;
+        /* grid-template-rows: 100px 200px; */
+        /* grid-template-columns: repeat(2, 50%); */
+        grid-template-columns: 2fr 1fr 4fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .bx1{
+      background-color: red;
+      grid-column: 2/3;
+      grid-row:2/3;
+    }
+    .bx2{
+      background-color: blue;
+      grid-column: 1/2;
+      grid-row:2/3;
+    }
+    .bx3{
+      background-color: green;
+    }
+    .bx4{
+      background-color: yellow;
+      grid-column:2/3 ;
+      grid-row:1/2;
+    }
+    .bx5{
+      background-color: purple;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="bx">
+
+      <div class="bx1">
+        <h3>bx1</h3>
+      </div>
+      <div class="bx2">
+        <h3>bx2</h3>
+      </div>
+      <div class="bx3">
+        <h3>bx3</h3>
+      </div>
+      <div class="bx4">
+        <h3>bx4</h3>
+      </div>
+      <div class="bx5">
+        <h3>bx5</h3>
+      </div>
+
+
+
+    </div>
+
+  </body>
+
+</html>
